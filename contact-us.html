@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        body,
+        html {
+            height: 100vh;
+            width: 100vw;
+        }
+
+
+        h2 {
+            text-align: center;
+        }
+
+      
+
+        .box-shadow {
+            -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0.75);
+        }
+
+        .main-body-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+
+        }
+.r3{
+    color:#F4F1BB;
+}
+        .r1,
+        .r3 {
+            display: grid;
+            background-color:#9BC1BC;
+            width: 100%;
+            grid-row-gap: 1em;
+        }
+
+        .r3 {
+            text-align: center;
+        }
+
+        .middle-bar {
+            padding: 80px 20%;
+            height: 100%;
+            margin: 0px auto;
+            width: 50%;
+
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 2fr 11fr 2fr;
+            height: 100%;
+            grid-row-gap: 1em;
+            padding: 0px 20px;
+        }
+
+        .c1>ul {
+            list-style-type: none;
+
+        }
+
+        .c1>ul>li>a {
+            text-decoration: none;
+            display: block;
+            padding: 15px 0px 15px 30px;
+            color: black;
+        }
+
+        .c1>ul>li>a:hover {
+            background-color: #c1c1c1
+        }
+        .form{
+            width: 500px;
+            height:500px;
+            margin: 100px auto;
+        }
+        .form-input{
+            width: 90%;
+            padding: 10px;
+           margin:2px;
+           
+        }
+        .submit-button{
+           
+            padding: 10px 40px;
+            margin-right: 25px;
+           float:right;
+            margin-top:12px;
+        }
+        
+            
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body class="main-body-grid">
+    <div class="r1">
+            <img class ="logo"src="./img/sm_logo.jpg" alt="Insert log here">
+    </div>
+    <div class="r2 two-column">
+
+        <div class="c1 box-shadow">
+            <ul>
+                    <li><a href="./About-us.html">About</a></li>
+                    <li><a href="./Contact-us.html">Contact Us</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product-grid.html">Product Listings</a></li>
+
+            </ul>
+        </div>
+        <div class="c2">
+
+            <h2>Contact Us</h2>
+<form class ="form">
+    <input placeholder ="First Name" type="text" id="first_name" class="form-input">
+    <input placeholder = "Last Name" type="text" id="first_name" class= "form-input">
+    <input placeholder= "Email Address" type=email id="email" class = "form-input">
+    <button onclick="contact.goToHome()" class="submit-button" type="button">Submit</button>
+
+</form>
+        </div>
+
+    </div>
+    <div class="r3">Copyright 2019 Edward Boehm</div>
+<script type="text/javascript" src=./js/contact.js></script>
+</body>
+
+</html>
